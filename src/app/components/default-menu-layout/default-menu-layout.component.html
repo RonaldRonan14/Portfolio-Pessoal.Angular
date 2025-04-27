@@ -1,0 +1,6 @@
+<section [class.show-menu]="showMenu" (click)="closeMenu()">
+    <nav (click)="stopPropagation($event)">
+        <img src="img/svg/close.svg" alt="fechar menu" (click)="closeMenu()">
+        <app-default-navigation-layout />
+    </nav>
+</section>

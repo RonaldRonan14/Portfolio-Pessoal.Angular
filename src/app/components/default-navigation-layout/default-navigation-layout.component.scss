@@ -1,0 +1,27 @@
+@use "variables.scss" as *;
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+
+    a {
+        font-weight: bold;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &.flex-direction-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 540px) {
+    ul {
+        flex-direction: row;
+    }
+}

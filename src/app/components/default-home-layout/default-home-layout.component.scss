@@ -1,0 +1,136 @@
+@use 'variables' as *;
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 24px;
+
+    .home-section-presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+
+        .home-presentation-name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                color: $dark-active;
+            }
+        }
+
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            color: $orange !important;
+        }
+
+        .home-made {
+            display: flex;
+            gap: 10px;
+            padding: 14px;
+            border-radius: 10px;
+            background-color: $darked;
+
+            h3 {
+                color: $orange !important;
+                margin-bottom: 8px;
+            }
+
+            span {
+                color: $normal-hover;
+            }
+
+            .separate {
+                border: 0;
+                border-left: 1px solid $dark;
+            }
+        }
+    }
+
+    .home-section-img {
+        display: flex;
+        align-items: center;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: $darked;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    section {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .home-section-presentation {
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+
+            .home-presentation-name {
+                align-items: start;
+
+                p {
+                    margin-bottom: 6px;
+                }
+            }
+
+            h1 {
+                text-align: start;
+                font-size: 50px;
+            }
+
+            .home-presentation-social-networks {
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            .home-made {
+                margin-top: 16px;
+            }
+        }
+
+        .home-section-img {
+            div {
+                height: 350px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    section {
+        .home-section-presentation {
+            h1 {
+                font-size: 70px;
+            }
+        }
+
+        .home-section-img {
+            div {
+                height: 450px;
+                width: 450px;
+            }
+        }
+    }
+}

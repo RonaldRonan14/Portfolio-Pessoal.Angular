@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+div {
+    background-color: $darked;
+    border-radius: 16px;
+    padding: 10px 14px;
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        h3 {
+            color: $orange !important;
+        }
+    }
+
+    p {
+        color: $dark-active;
+        font-weight: bold !important;
+    }
+}

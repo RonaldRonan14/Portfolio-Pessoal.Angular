@@ -1,0 +1,23 @@
+section {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 14px;
+        margin-top: 20px;
+
+        app-default-card-layout {
+            max-width: 140px;
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    section {
+        section {
+            app-default-card-layout {
+                max-width: none;
+            }
+        }
+    }
+}

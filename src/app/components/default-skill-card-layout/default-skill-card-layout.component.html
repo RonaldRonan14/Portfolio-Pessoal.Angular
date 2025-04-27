@@ -1,0 +1,24 @@
+<div class="skill-card">
+    <div class="circle-wrapper">
+      <svg viewBox="0 0 36 36" class="progress-circle">
+        <circle
+          class="circle-bg"
+          cx="18" cy="18" r="15.9155"
+        />
+        <circle
+          class="circle"
+          cx="18" cy="18" r="15.9155"
+          [attr.stroke-dasharray]="circumference"
+          [attr.stroke-dashoffset]="calculateStrokeOffset()"
+        />
+      </svg>
+  
+      <div class="icon-content">
+        <ng-content select="[icon]"></ng-content>
+      </div>
+    </div>
+  
+    <div class="percent">{{ percent }}%</div>
+    <div class="title">{{ title }}</div>
+  </div>
+  
