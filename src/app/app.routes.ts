@@ -5,6 +5,7 @@ import { MessagePageComponent } from './admin/pages/message-page/message-page.co
 
 export const routes: Routes = [
     { path: '', component: PortfolioPageComponent },
+    { path: 'admin', redirectTo: 'admin/login', pathMatch: 'full'},
     { path: 'admin/login', component: AdminLoginPageComponent },
     { path: 'admin/message', component: MessagePageComponent },
     // { path: '', component: MessagePageComponent },
