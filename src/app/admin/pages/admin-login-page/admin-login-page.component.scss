@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 100%;
+
+    .back-portfolio {
+        position: absolute;
+        bottom: 20px;
+        color: $orange;
+    }
+    
+    form {
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        app-button-transparent {
+            width: 100%;
+        }
+
+        .button-submit {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+@media (min-width: 540px) {
+    section {
+        form {
+            width: 350px;
+        }
+    }
+}

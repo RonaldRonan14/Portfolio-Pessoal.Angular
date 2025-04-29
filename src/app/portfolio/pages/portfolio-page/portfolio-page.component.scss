@@ -1,0 +1,22 @@
+@use 'variables' as *;
+
+main {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $body-bg;
+    padding: 0 20px;
+}
+
+@media (min-width: 1140px) {
+    header {
+        position: relative;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    main {
+        width: 70%;
+        padding: 30px 60px;
+    }
+}
